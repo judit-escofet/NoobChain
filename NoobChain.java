@@ -1,6 +1,5 @@
 
 import java.util.ArrayList;
-import com.google.gson.GsonBuilder;
 
 public class NoobChain {
 
@@ -22,8 +21,10 @@ public class NoobChain {
 
         System.out.println("\nBlockchain is Valid: " + isChainValid());
 
-        String blockchainJson = new GsonBuilder().setPrettyPrinting().create().toJson(blockchain);
-        System.out.println(blockchainJson);
+        System.out.println("\nBlockchain Contents:");
+        for (Block block : blockchain) {
+            System.out.println("Hash: " + block.hash + " | Prev: " + block.previousHash);
+        }
     }
 
     public static Boolean isChainValid(){
