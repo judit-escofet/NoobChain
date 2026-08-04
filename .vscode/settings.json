@@ -1,6 +1,0 @@
-{
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "c:\\Users\\Judit\\Downloads\\bcprov-jdk18on-1.85.jar"
-    ]
-}
